@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprout Changelog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2d3748;
+            --secondary-color: #4a5568;
+            --background: #9ed59e;
+            --card-bg: white;
+            --text-color: #2d3748;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --hover-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--background);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .main-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .month-nav {
+            position: sticky;
+            top: 2rem;
+            width: 200px;
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-top: 0;
+        }
+
+        .month-nav h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .month-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .month-nav li {
+            margin-bottom: 0.5rem;
+        }
+
+        .month-nav button {
+            width: 100%;
+            text-align: left;
+            padding: 0.75rem 1rem;
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .month-nav button:hover {
+            background: rgba(45, 55, 72, 0.1);
+        }
+
+        .month-nav button.active {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, rgba(45, 55, 72, 0.1) 0%, rgba(74, 85, 104, 0.1) 100%);
+            border-radius: 20px;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #718096;
+        }
+
+        .search-box {
+            margin-bottom: 2rem;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(45, 55, 72, 0.1);
+        }
+
+        .month-header {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 2rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .changelog-entry {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .changelog-entry:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--hover-shadow);
+        }
+
+        .entry-date {
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tldr {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .tldr strong {
+            color: var(--secondary-color);
+        }
+
+        .action {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+        }
+
+        .action strong {
+            color: #2e7d32;
+        }
+
+        .slack-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .slack-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(45, 55, 72, 0.3);
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 3rem 0 2rem 0;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .pagination button {
+            padding: 0.75rem 1.5rem;
+            background: #2d3748;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .pagination button:hover:not(:disabled) {
+            background: #1a202c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(45, 55, 72, 0.3);
+        }
+
+        .pagination button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .pagination .current-page {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2d3748;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .month-content {
+            display: none;
+        }
+
+        .month-content.active {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            .month-nav {
+                position: relative;
+                top: 0;
+                width: 100%;
+                order: -1;
+                margin-top: 0;
+            }
+
+            header {
+                padding: 2rem 1rem;
+            }
+
+            .changelog-entry {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                🍃 Sprout Changelog
+            </h1>
+            <p class="subtitle">Your one-stop shop for Sprout updates</p>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="main-content">
+                <main>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search changelog...">
+                    </div>
+
+                    <div id="changelog">
+                        <!-- Changelog entries will be loaded from changelog-data.json -->
+                        <div style="text-align: center; padding: 3rem; color: #718096;">
+                            <p>Loading changelog...</p>
+                        </div>
+                    </div>
+
+                    <!-- Pagination Controls -->
+                    <div class="pagination">
+                        <button id="prevBtn" onclick="changePage(-1)">← Previous</button>
+                        <span class="current-page" id="pageInfo">November 2025</span>
+                        <button id="nextBtn" onclick="changePage(1)">October 2025 →</button>
+                    </div>
+                </main>
+
+                <footer>
+                    <p>Have feedback? Please DM Emily Pearce 💚</p>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">© 2025 Sprout. All rights reserved.</p>
+                </footer>
+            </div>
+
+            <aside class="month-nav">
+                <h3>Jump to Month</h3>
+                <ul>
+                    <li><button onclick="jumpToMonth(0)" data-month="0">November 2025</button></li>
+                    <li><button onclick="jumpToMonth(1)" data-month="1">October 2025</button></li>
+                    <li><button onclick="jumpToMonth(2)" data-month="2">September 2025</button></li>
+                    <li><button onclick="jumpToMonth(3)" data-month="3">August 2025</button></li>
+                    <li><button onclick="jumpToMonth(4)" data-month="4">July 2025</button></li>
+                    <li><button onclick="jumpToMonth(5)" data-month="5">June 2025</button></li>
+                    <li><button onclick="jumpToMonth(6)" data-month="6">May 2025</button></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <script>
+        // Pagination functionality
+        const months = ['november', 'october', 'september', 'august', 'july', 'june', 'may'];
+        const monthNames = {
+            'november': 'November 2025',
+            'october': 'October 2025',
+            'september': 'September 2025',
+            'august': 'August 2025',
+            'july': 'July 2025',
+            'june': 'June 2025',
+            'may': 'May 2025'
+        };
+        let currentPage = 0;
+        let changelogData = null;
+
+        // Load changelog data from JSON
+        async function loadChangelogData() {
+            try {
+                const response = await fetch('changelog-data.json');
+                changelogData = await response.json();
+                renderChangelog();
+                updatePage();
+            } catch (error) {
+                console.error('Error loading changelog data:', error);
+                document.getElementById('changelog').innerHTML = '<p style="text-align: center; color: red;">Error loading changelog data. Please refresh the page.</p>';
+            }
+        }
+
+        // Render changelog entries from JSON data
+        function renderChangelog() {
+            const changelogContainer = document.getElementById('changelog');
+            changelogContainer.innerHTML = '';
+
+            // Group entries by month
+            const entriesByMonth = {};
+            months.forEach(month => {
+                entriesByMonth[month] = [];
+            });
+
+            changelogData.entries.forEach(entry => {
+                if (entriesByMonth[entry.month]) {
+                    entriesByMonth[entry.month].push(entry);
+                }
+            });
+
+            // Create month sections
+            months.forEach((month, index) => {
+                const monthEntries = entriesByMonth[month];
+                if (monthEntries.length === 0) return;
+
+                const monthDiv = document.createElement('div');
+                monthDiv.className = 'month-content';
+                monthDiv.setAttribute('data-month', month);
+                if (index === 0) monthDiv.classList.add('active');
+
+                const monthHeader = document.createElement('h2');
+                monthHeader.className = 'month-header';
+                monthHeader.textContent = monthNames[month];
+                monthDiv.appendChild(monthHeader);
+
+                monthEntries.forEach(entry => {
+                    const entryDiv = document.createElement('div');
+                    entryDiv.className = 'changelog-entry';
+
+                    const dateDiv = document.createElement('div');
+                    dateDiv.className = 'entry-date';
+                    dateDiv.textContent = `📅 ${entry.date}`;
+                    entryDiv.appendChild(dateDiv);
+
+                    if (entry.tldr) {
+                        const tldrDiv = document.createElement('div');
+                        tldrDiv.className = 'tldr';
+                        tldrDiv.innerHTML = `<strong>TL;DR:</strong> ${entry.tldr}`;
+                        entryDiv.appendChild(tldrDiv);
+                    }
+
+                    if (entry.action) {
+                        const actionDiv = document.createElement('div');
+                        actionDiv.className = 'action';
+                        actionDiv.innerHTML = `<strong>Action:</strong> ${entry.action}`;
+                        entryDiv.appendChild(actionDiv);
+                    }
+
+                    if (entry.slackUrl) {
+                        const slackLink = document.createElement('a');
+                        slackLink.href = entry.slackUrl;
+                        slackLink.className = 'slack-link';
+                        slackLink.target = '_blank';
+                        slackLink.textContent = 'View in Slack';
+                        entryDiv.appendChild(slackLink);
+                    }
+
+                    monthDiv.appendChild(entryDiv);
+                });
+
+                changelogContainer.appendChild(monthDiv);
+            });
+        }
+
+        function updatePage() {
+            // Hide all month contents
+            document.querySelectorAll('.month-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Show current month
+            const currentMonth = months[currentPage];
+            document.querySelector(`[data-month="${currentMonth}"]`).classList.add('active');
+
+            // Update page info
+            document.getElementById('pageInfo').textContent = monthNames[currentMonth];
+
+            // Update button states and text
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            if (currentPage === 0) {
+                prevBtn.disabled = true;
+                prevBtn.style.visibility = 'hidden';
+            } else {
+                prevBtn.disabled = false;
+                prevBtn.style.visibility = 'visible';
+                prevBtn.textContent = '← ' + monthNames[months[currentPage - 1]];
+            }
+            
+            if (currentPage === months.length - 1) {
+                nextBtn.disabled = true;
+                nextBtn.style.visibility = 'hidden';
+            } else {
+                nextBtn.disabled = false;
+                nextBtn.style.visibility = 'visible';
+                nextBtn.textContent = monthNames[months[currentPage + 1]] + ' →';
+            }
+
+            // Update month navigation
+            updateMonthNav();
+        }
+
+        function changePage(direction) {
+            currentPage += direction;
+            if (currentPage < 0) currentPage = 0;
+            if (currentPage >= months.length) currentPage = months.length - 1;
+            updatePage();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function jumpToMonth(monthIndex) {
+            currentPage = monthIndex;
+            updatePage();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function updateMonthNav() {
+            // Update active state in month navigation
+            document.querySelectorAll('.month-nav button').forEach((btn, index) => {
+                if (index === currentPage) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const entries = document.querySelectorAll('.changelog-entry');
+
+            if (searchTerm === '') {
+                // Show only current month
+                updatePage();
+            } else {
+                // Show all months and filter entries
+                document.querySelectorAll('.month-content').forEach(content => {
+                    content.classList.add('active');
+                });
+            
+                entries.forEach(entry => {
+                    const text = entry.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        entry.style.display = 'block';
+                    } else {
+                        entry.style.display = 'none';
+                    }
+                });
+            }
+        });
+
+        // Initialize - load data and set up page
+        loadChangelogData();
+    </script>
+</body>
+</html>

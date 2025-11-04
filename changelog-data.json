@@ -1,0 +1,677 @@
+{
+  "entries": [
+    {
+      "month": "november",
+      "year": "2025",
+      "date": "November 3, 2025",
+      "tldr": "Fraud Ops now holding high-risk payouts up to full year - discovered via Trust Platform ticket linked from Sprout case. Merchant RELIGIONLESS terminated for suspected illegitimate commerce activity violating ToS, account closed with pending payouts held.",
+      "action": "Be aware of extended payout hold policy for high-risk merchants and prepare for increased merchant complaints about year-long holds in Sprout.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1762190681764799"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 31, 2025",
+      "tldr": "The Logic published story on Shopify merchant support and AI. External Communications and Senior Leadership aware, but no immediate SIR action needed unless reaction appears in Sprout.",
+      "action": "Thread any Sprout reactions in #help-social-escalations for visibility tracking.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1761928538274189"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 31, 2025",
+      "tldr": "Guidance on filling user profiles in Sprout Social for frequent flyers - adding partner dashboard links and current email to user profiles can significantly speed up future case handling.",
+      "action": "Populate user profiles when confident information is accurate to improve efficiency for next ATC shift handling same merchant.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1761919711987769"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 26, 2025",
+      "tldr": "X post escalated to Brand and Allison/Anusha on Oct 25 for negative Help Center support experience (Sprout CASE-10988). Out-of-office coverage requested for #help-social-escalations thread if further asks come in.",
+      "action": "Monitor escalated cases and action any follow-up requests during original handler's absence.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1761529561524909"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 21, 2025",
+      "tldr": "Product team considering responding to Reddit post about merchant unable to make Capital repayments due to technical issue. Team brainstorming whether to engage publicly on Reddit for financial product issues.",
+      "action": "Escalate similar social outreach considerations to leadership before Product teams respond publicly to financial/payment issues.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1761087390114359"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 20, 2025",
+      "tldr": "Sprout case (CASE-10987) flagged for visibility - Harley responded to merchant indicating DM follow-up, case doesn't meet typical escalation tripwires but kept open in SIR folder.",
+      "action": "Keep high-profile cases open when executives engage directly, even if below standard tripwires, in case executive escalation materializes.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1760969699818759"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 20, 2025",
+      "tldr": "Sprout Social experiencing outage - unable to access platform. AWS outage detected at 08:29 UTC affecting internal Shopify infrastructure services including Sprout.",
+      "action": "Report Sprout access issues immediately and prepare for backlog clearing once service restored.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1760969679664139"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 17, 2025",
+      "tldr": "Merchant generating significant support debt through executive escalations and social posts - team has responded multiple times in Sprout which may be encouraging further activity. Decision made to stop replying to social posts while working toward backend solution.",
+      "action": "Recognize patterns of escalation-seeking behavior and consult leadership before continuing to engage merchants creating excessive support debt.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1760726294891769"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 17, 2025",
+      "tldr": "Sprout creating multiple cases tagged \"payouts\" replying to invisible post - all related to already-escalated case being handled via exec email. Post replies not visible in Sprout but triggering case creation based on keyword.",
+      "action": "Recognize when multiple auto-created cases link to single handled escalation and bulk-close to reduce noise.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1760723473032799"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 15, 2025",
+      "tldr": "Product variant limit increased to 2048 announced on X - Brand and Product teams requesting SIR respond to common/simple questions in Sprout using Help Center article. New saved response available in Sprout Asset Library.",
+      "action": "Use prepared response for variant limit questions and escalate complex/edge cases to Product team.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1760553860726309"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 13, 2025",
+      "tldr": "Merchant used sock puppet accounts (20+ \"friends\" with similar experiences) to create false escalation pattern tagging Tobi. Initially fooled by rate and variety of accounts, escalated to #help-social-escalations before identifying as coordinated inauthentic behavior.",
+      "action": "Watch for suspiciously similar complaints from multiple new accounts in short timeframe and verify authenticity before escalating.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1760329833393989"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 12, 2025",
+      "tldr": "Reports in Sprout of payouts not being paid after reserve lifted or queue changes - queues showing yellow/orange/green fluctuation. No official incident at time but WFP dashboard showing impact.",
+      "action": "Monitor Sprout for payout-related complaints during queue instability and escalate patterns even without declared incident.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1760322002180499"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 9, 2025",
+      "tldr": "Commercial Leadership changes announced today - social chatter expected in Sprout with dedicated listening dashboard reporting to External Comms. No need to share posts to #help-social-escalations as volume/sentiment reported directly to stakeholders.",
+      "action": "Only escalate posts with high engagement or exceptional circumstances, not general reactions to leadership announcements.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1760038001177569"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 9, 2025",
+      "tldr": "Shopify Product Network launching in early access - merchants can show other brands' products on storefronts, earn cash/ad credits. Shop Campaigns expanding to include Product Network as third channel. Dedicated Sprout monitoring in place.",
+      "action": "Familiarize with Product Network concept and use prepared responses in Asset Library for merchant questions.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1760020776589299"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 2, 2025",
+      "tldr": "Guidance needed on escalating buyer issue with Shop App (@shop tagged on X) - buyer can't pay with Shop Pay Installments. No guidance found in Figjam escalation map for buyer/Shop-specific issues.",
+      "action": "Advocate for adding buyer-focused escalation paths to Figjam map and escalate to Brand for Shop App buyer issues.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1759442573404249"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 1, 2025",
+      "tldr": "Sprout case reporting HCA bot not connecting to Advisor - social escalations ATC map says tag David Kohl, but need alternate contact. Question about whether to flag to Anusha instead.",
+      "action": "Verify escalation contacts remain current in ATC map and have backup contacts for key stakeholders who are unavailable.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1759346960437449"
+    },
+    {
+      "month": "october",
+      "year": "2025",
+      "date": "October 1, 2025",
+      "tldr": "Two buyers reporting Taylor Swift merch shipment status issues in Sprout (CASE-10448) - believed related to inventory handling problems UGM mentioned. RIR confirmed issues.",
+      "action": "Monitor for buyer complaints on high-profile merchant campaigns and cross-reference with internal awareness channels before escalating.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1759344432333609"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 30, 2025",
+      "tldr": "Temporary Sprout rule created to reduce Agentic Commerce noise - automatically tags and completes posts meeting OAI keyword criteria from accounts with <800 followers. Set intentionally under 1k threshold after Brand consultation.",
+      "action": "Be aware rule filtering low-follower Agentic Commerce mentions but manual review still needed for 800+ follower accounts.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1759238947759969"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 29, 2025",
+      "tldr": "Updated escalation guidance for Agentic Commerce - tag SIR Comms Approvers and SIR Escalations in #help-social-escalations posts, do NOT tag Glenn Cromwell directly. Merchant messaging FAQs available in Sprout Asset Library folder.",
+      "action": "Follow updated tag list and use pre-approved FAQs for consistent Agentic Commerce responses.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1759164624896279"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 29, 2025",
+      "tldr": "ChatGPT Commerce Early Access launching today Sept 29 - select Enterprise US merchants with Shopify Payments can sell directly in ChatGPT conversations. Early access limited with specialized support team, likely increased Sprout volume.",
+      "action": "Use prepared saved responses in Sprout Asset Library and redirect Enterprise merchant questions to specialized support team.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1759153096478029"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 28, 2025",
+      "tldr": "UMG Taylor Swift flash sale happening in one hour during ATC changeover shift. Flagging for awareness, Sprout will be cleared so issues highly visible.",
+      "action": "Monitor Sprout during high-profile merchant flash sales and ensure clean inbox before major events for quick issue identification.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1759086195545819"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 23, 2025",
+      "tldr": "New Sprout rule created to automatically complete \"new followers\" requests in Smart Inbox for all social handles. Re-check \"new followers\" from \"message types\" for X in Smart Inbox filters to verify rule working.",
+      "action": "Validate automation rules by temporarily re-enabling filtered content to ensure proper functioning.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1758653386376169"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 19, 2025",
+      "tldr": "Kaz keywords removed from Sprout monitoring - posts/conversations involving Kaz no longer tracked. Ping SIR Escalate if Kaz posts still appearing in Smart Inbox.",
+      "action": "Report any Kaz-related posts that slip through as monitoring formally discontinued.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1758310686177559"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 19, 2025",
+      "tldr": "Error replying to merchant in Sprout (CASE-9998) - \"Forbidden: You do not have permissions to reply\" error occurring for multiple team members. SIR Escalations investigating.",
+      "action": "Report Sprout technical errors with case numbers immediately to SIR Escalations for platform issue escalation to Sprout Support.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1758289363082469"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 18, 2025",
+      "tldr": "Merchants with lifted payout holds updating bank accounts being stuck in loop - Money team needs to handle these specific Sprout cases.",
+      "action": "Tag Money Support Leads in #merchant-support-technical when merchants stuck after hold lift and bank update. Recognize payout hold + bank update combination as Money team escalation not standard support flow.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1758232727743489"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 18, 2025",
+      "tldr": "DMCA tripwires may need review - escalated post didn't initially hit tripwires, auto-closed, but ramped quickly to 7k views in 4 hours with high-follower boosts and exec tags. Core issue resolved but tripwire calibration worth reviewing.",
+      "action": "Document near-miss escalations where tripwires failed to catch rapidly-ramping issues for tripwire tuning discussions.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1758213041171449"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 16, 2025",
+      "tldr": "First Kaz post seen about fixing OpenDoor (not Shopify) - questioning if time to remove Kaz monitoring from Sprout. Would reduce noise monitoring personal projects.",
+      "action": "Advocate for removing monitoring when high-profile accounts transition to non-Shopify activities.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1758068104988619"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 10, 2025",
+      "tldr": "Custom view available in Sprout for bulk actions on specific content type.",
+      "action": "Leverage custom views for efficient bulk processing when recurring patterns identified requiring same action.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1757540711241589"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 5, 2025",
+      "tldr": "OpenAI Agentic Commerce launch reminder - launched Sept 4, \"made history\" with entirely new selling method through ChatGPT. 38 VIP merchants in early access aiming for 5-10 adoptions.",
+      "action": "Be familiar with Agentic Commerce terminology and prepared for merchant questions about ChatGPT selling integration.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1757074789328309"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 5, 2025",
+      "tldr": "SIR handover includes handful of Sprout cases without responses from escalated teams - monitoring and follow-up requested for next shift.",
+      "action": "Explicitly handover pending Sprout escalations with follow-up requirements during shift changes.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1757046352539729"
+    },
+    {
+      "month": "september",
+      "year": "2025",
+      "date": "September 2, 2025",
+      "tldr": "OpenAI Agentic Commerce launching Sept 4 - entirely new way to sell through ChatGPT reaching millions of buyers. 38 VIP merchants early access, confidential outreach, expect volume increase on launch and beyond.",
+      "action": "Monitor Sprout for Agentic Commerce/ChatGPT mentions and use prepared custom view for social listening on launch day.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1756821619221179"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 29, 2025",
+      "tldr": "Emerging issue with shop login button greyed out - no status page yet but tweets coming in. Modified Sprout response proposed acknowledging issue without status page.",
+      "action": "Adapt standard incident responses when aware of issues not yet formalized on status page to manage merchant expectations.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1756481886936329"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 29, 2025",
+      "tldr": "iDEAL payment gating rolling out in 3 phases affecting 14,000 merchants - advance notice Sept 2/8/15, revocation Sept 5/11/18. Increased social media activity expected over 3 weeks.",
+      "action": "Monitor Sprout for iDEAL mentions using custom view, redirect merchants to email communications, and escalate sentiment concerns to Money Support Leads.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1756472411606589"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 28, 2025",
+      "tldr": "Thank You and Order Status Pages migration deadline Aug 28 for Plus merchants - limitations placed Aug 29 morning if not migrated (additional scripts and checkout.liquid not editable, existing customizations preserved). Social monitoring in effect with custom Sprout view, escalate to Checkout and Money Support Leads.",
+      "action": "Use prepared responses in Asset Library and redirect technical migration questions to Plus support.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1756386183298759"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 27, 2025",
+      "tldr": "De Minimis change starting Aug 29, monitoring beginning today. Use established tripwires, escalate posts to #help-social-escalations tagging Glenn Wilson and Ashley Frey. Custom Sprout view \"Triage - De Minimis Change\" available for monitoring and bulk actions.",
+      "action": "Familiarize with De Minimis policy change and monitor custom view daily for merchant concerns.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1756309286196889"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 26, 2025",
+      "tldr": "Outage impacting admin/checkout/storefront - queues in Plus/Enterprise building, couple of Sprout cases already. Standby for potential tweets.",
+      "action": "Coordinate with incident response channels and prepare Sprout saved responses when aware of developing outages.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1756222559082729"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 22, 2025",
+      "tldr": "Reminder - when sharing harmful content (hate-based, negative, offensive) in #help-social-escalations, always delete thumbnail image before posting. Thumbnails expose team to harmful imagery. Applies to all offensive content, not just war-related.",
+      "action": "Protect team mental health by removing image previews from disturbing escalations.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1755876376666269"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 22, 2025",
+      "tldr": "Enhanced incident communication guidelines added to Social Escalations Guru Card - during outages, can add details to saved replies beyond pre-approved text (like estimated resolution time if known). Additional flexibility for contextual incident responses.",
+      "action": "Leverage optional detail additions to pre-approved incident responses when additional context helpful to merchants.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1755866975522679"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 20, 2025",
+      "tldr": "iDEAL monitoring exit program context - 12-month monitoring for Dutch payment following 2024 fraud surge. iDEAL holds 70% Netherlands market share with low credit card usage, creating dependent merchants. Upcoming gating/revocation causing merchant concern.",
+      "action": "Understand iDEAL market dominance in Netherlands and empathize with merchants having limited alternative payment options when responding in Sprout.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1755696531591039"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 18, 2025",
+      "tldr": "Shop on X switching from private to public today to launch first ad campaign. SIR engaging with public posts under ShopifySupport handle - redirect Shop inquiries to contact page using macros from Shop Support folder in Asset Library. Will respond from ShopifySupport but tag Brand only for high-profile posts.",
+      "action": "Use prepared Shop Support responses and maintain distinction between Shopify merchant support and Shop buyer support.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1755528844042369"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 18, 2025",
+      "tldr": "Sprout Smart Inbox showing week-old posts about Chinese coast guard ship tagging Shop - checking if custom view created/deleted causing old content to resurface. Settings unchanged but bulk of old unrelated posts appeared.",
+      "action": "Report sudden appearance of old/irrelevant content in Smart Inbox as potential Sprout configuration issue.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1755527491954029"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 15, 2025",
+      "tldr": "Out-of-office for 2 weeks, requesting coverage for 3 items: 2 incidents and 1 Sprout case. One incident has comms/comp approved needing monitoring and back-and-forth. Coverage handoff document provided. SIR specialists should create detailed coverage documents for extended absences including case numbers, context, and specific action items.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1755273066709639"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 13, 2025",
+      "tldr": "Slack escalation channels change effective today - Product, Developer, and Partner social escalations moving to #help-developer-partners-escalations instead of #help-incident-response. SIR redirects Product/Dev/Partner inquiries from #help-incident-response to new channel. SIR specialists should use correct escalation channel for non-merchant social issues to ensure proper stakeholder visibility.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1755086406520459"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 13, 2025",
+      "tldr": "SIR handover - Sprout case needs following up with Account Security. SIR specialists should explicitly note Sprout cases requiring external team follow-up in handovers to ensure continuity.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1755061971817869"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 12, 2025",
+      "tldr": "Taylor Swift release happened/happening - interesting launch with wobbly start (3p link tool issue), then long checkout waits from high traffic. Incident channel and social media threads linked for context. Nothing hit Sprout tripwires, nothing asked of SIR, but providing awareness for next shift. SIR specialists should review linked threads when high-profile events occur overnight to understand context before shift starts.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1754978754726999"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 11, 2025",
+      "tldr": "Social sign-in options for customer accounts launching Aug 12 exclusively announced on X/Twitter. Reactive messaging plan available in Sprout Asset Library folder \"Social Sign-In Options on Customer Accounts\". SIR specialists with upcoming Secondary shifts should review Asset Library folder for prepared responses.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1754935049102009"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 9, 2025",
+      "tldr": "Physical security threat made by alleged Shopify employee tweeted on X - contacted #trust-and-safety-incidents, Sprout case under investigation. No action required from SIR leads at this time. SIR specialists should immediately report physical security threats to Trust & Safety and document in Sprout even if no immediate SIR action needed.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1754766794180189"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 6, 2025",
+      "tldr": "Sprout internal note error resolved - engineers released fix, refresh browser if issue persists. Reported immediately if still encountering errors. SIR specialists should report resolution confirmation or continued issues after platform fixes to verify remediation successful.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1754501503623739"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 6, 2025",
+      "tldr": "Internal note error in Sprout since Aug 5 - Sprout Support duplicated issue and escalated to Engineering. Waiting for fix. SIR specialists should document platform bugs with screenshots/recordings when reporting to Sprout Support for faster escalation.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1754488680534149"
+    },
+    {
+      "month": "august",
+      "year": "2025",
+      "date": "August 5, 2025",
+      "tldr": "Agentic Commerce announcement morning of Aug 5 ET - Tobi posting on X likely before noon EST. Do NOT answer comments/questions on social. No ask for SIR monitoring - Brand Social handling, will reach out if conversation escalates. SIR specialists should avoid proactive engagement on executive announcement posts unless explicitly requested by Brand team.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1754400520213189"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 29, 2025",
+      "tldr": "Fix confirmed - can now continue directing requesters to unauthenticated support via \"Can't Login\" page, back in HCA flow. \"Do Not Use\" notes removed from Sprout saved responses, resume normal use. SIR specialists should verify resolution of workflow interruptions before resuming standard response usage.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1753798618804569"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 28, 2025",
+      "tldr": "Couple Sprout mentions about USPS labels being down via email notifications while AFK. Check with #help-incident-response for incident status. SIR specialists should cross-reference Sprout mentions with incident channels before escalating to verify issue not already tracked.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1753742864659789"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 25, 2025",
+      "tldr": "Terms of Service effective today July 25 - monitoring posts, flag noteworthy ones under announcement thread (will escalate to private channel if not already flagged). No ask for SIR beyond monitoring, do NOT respond from ShopifySupport X unless direct request from External Comms/Brand Social. SIR specialists should passive-monitor policy changes unless explicitly requested to engage by comms teams.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1753477202712799"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 25, 2025",
+      "tldr": "Help Center intake flow changed eliminating unauthenticated \"Email Support\" page option - no way for unauthenticated requesters to reach support without creating identity account. Creating only identity account creates password-only shops requiring merchant to create Shopify ID. HCA Assistant workflow temporarily broken. SIR specialists should pause using affected Sprout saved responses marked \"Do Not Use\" until workflow fixed.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1753461514547029"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 25, 2025",
+      "tldr": "Glenn Wilson replied to developer's frustrated tweet about new dev experience - not high views/engagement yet but noteworthy. SIR specialists should flag executive engagement with negative sentiment posts for awareness even if below tripwire thresholds.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1753460252279339"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 25, 2025",
+      "tldr": "ToS effective today July 25 - monitor posts, flag noteworthy ones underneath this thread (will escalate to dedicated private channel if not already flagged). No ask for SIR beyond monitoring. SIR specialists should centralize reporting under designated threads for policy changes to streamline stakeholder visibility.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1753449863592559"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 24, 2025",
+      "tldr": "SIR handover - Sprout case relates to LIEN and current incident, invited merchant to DM hoping resolved by reply time. Lien raised in separate escalation thread. SIR specialists should link related escalations across channels in handovers for complete context.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1753412515923989"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 24, 2025",
+      "tldr": "Post criticizing Kaz personally (not Shopify) - 2,409 followers (meets 1k+ threshold), 58 views (below 100+ threshold), negative sentiment targeting executive personally. Highlighting for awareness as exec-targeted content. SIR specialists should report personally-targeted executive criticism even if below view thresholds for pattern monitoring.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1753411427477919"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 24, 2025",
+      "tldr": "Sprout Smart Inbox best practices reminder - only bulk tag/clear posts related to single topic at once (e.g., all exec mentions with \"Exec Mentions\" tag, then separately all spam with spam tag). Prevents mixed tagging causing inaccurate analytics. SIR specialists should maintain tag hygiene by processing one topic/tag combination at a time for accurate reporting.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1753370963309409"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 23, 2025",
+      "tldr": "ToS effective date reminder - Friday July 25. Monitor posts, escalate noteworthy ones under July 25 announcement thread. No ask for SIR beyond monitoring, do not respond from ShopifySupport X unless direct request from External Comms/Brand Social. SIR specialists should prepare for policy change social monitoring by reviewing expected impact and stakeholder notification preferences.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1753297465965279"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 8, 2025",
+      "tldr": "Shop App account deletions incident - custom Sprout queue created but won't populate until tomorrow. Monitoring today for EOD insight into social reaction. SIR specialists should manually monitor for new incident types before automated queues active to provide early stakeholder visibility.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1751987494527189"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 2, 2025",
+      "tldr": "User tagged Shopify in sexually explicit images on X - requesting account block. Sprout case link provided. SIR specialists should request immediate account blocks for accounts posting adult content or harassment using Shopify tags.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1751493088663909"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 2, 2025",
+      "tldr": "FYI - good awareness as community posts sometimes shared on socials. SIR specialists should monitor Community forum activity that may spill to Sprout Social for coordinated response context.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1751491799552539"
+    },
+    {
+      "month": "july",
+      "year": "2025",
+      "date": "July 1, 2025",
+      "tldr": "Tobi tagged in tweet about mitigated Romania-specific incident. Generally wouldn't reply reactively without status page, but due to exec tag double-checked with RIR and sent response with incident channel link. SIR specialists should assess exec tag context and coordinate with RIR before responding to mitigated incidents on social.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1751419025277119"
+    },
+    {
+      "month": "june",
+      "year": "2025",
+      "date": "June 30, 2025",
+      "tldr": "Canada Post scheduled outage from June 30, 6pm EST to July 2, 7am EST. Merchants unable to purchase/cancel labels, tracking delayed. High-impact posts should be escalated to #external-communications-brand-and-social tagging Emily Pearce (Communication Manager) and Graeme Hein. SIR specialists should monitor Canada Post Custom View and escalate high-visibility merchant concerns during outage window.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1751302981387469"
+    },
+    {
+      "month": "june",
+      "year": "2025",
+      "date": "June 26, 2025",
+      "tldr": "Revamped Guru Cards for Sprout Social workflows and tripwires. General Workflows streamlined, new Tripwire Table card created for quick reference, Specific Topic Workflows updated with tips. SIR specialists should review new Guru Cards before next Secondary ATC shift to familiarize with reorganized Sprout processes and standalone tripwire reference.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1751288280704349"
+    },
+    {
+      "month": "june",
+      "year": "2025",
+      "date": "June 19, 2025",
+      "tldr": "Emerging incident causing admin downtime with 3 Sprout reports in 10-15 minutes. Already alerted SRR channel and Sophie Lawton (SIR Lead) aware. SIR specialists should note rapid Sprout report accumulation as early incident indicator requiring immediate SRR escalation.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1750100455587239"
+    },
+    {
+      "month": "june",
+      "year": "2025",
+      "date": "June 13, 2025",
+      "tldr": "Sprout case needs response after hearing back from esc-fraud team. SIR specialists should check handover thread for fraud-related cases requiring follow-up responses once escalation team provides guidance.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1749786780240919"
+    },
+    {
+      "month": "june",
+      "year": "2025",
+      "date": "June 12, 2025",
+      "tldr": "USDC on Shopify Payments announced today at Coinbase conference. Tobi/Harley posting around 3pm EST, anticipate crypto questions. Custom View created, reactive Q&A doc available for responses. SIR specialists should use USDC Custom View and Q&A document to address crypto-related questions during monitoring shifts, following standard social-escalations procedures for complex issues.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1749740977985599"
+    },
+    {
+      "month": "june",
+      "year": "2025",
+      "date": "June 10, 2025",
+      "tldr": "ToS Updates monitoring starts today. Flag noteworthy posts in thread, private escalation channel set up. No SIR response needed unless External Comms/Brand Social requests; approved responses in Asset Library ToS folder if Brand team absent. SIR specialists should monitor ToS posts passively, flag in designated thread, and await Brand Social direction before responding from @ShopifySupport.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1749570301046529"
+    },
+    {
+      "month": "june",
+      "year": "2025",
+      "date": "June 9, 2025",
+      "tldr": "Complete ToS Updates training if not done. Starting June 10, monitoring begins with private escalation channel. No SIR response from ShopifySupport X unless requested by External Comms/Brand Social; approved responses in Asset Library if they're absent. SIR specialists should complete training, understand passive monitoring role, and know where to find approved ToS responses without proactive engagement.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1749472200381779"
+    },
+    {
+      "month": "june",
+      "year": "2025",
+      "date": "June 6, 2025",
+      "tldr": "Merchant believes store unfairly shut down due to competitor's DMCA notice, tweet has ~13k views and tags execs. Asked merchant to DM ticket details; if DM received, notify Emily Pearce (Brand Social) in thread. SIR specialists should request DM for ticket info when merchant claims unfair actions without providing identifiable store details, then notify Brand Social for escalation coordination.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1749220565306799"
+    },
+    {
+      "month": "june",
+      "year": "2025",
+      "date": "June 3, 2025",
+      "tldr": "Increased discussions for three topics: Globe and Mail CRA article, Kanye West new Shopify store, Tobi's Maticrobots tweet. Custom Views available for bulk actions. SIR specialists should use topic-specific Custom Views for efficient bulk triaging when discussion volume spikes around trending merchant/platform mentions.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1748889016397839"
+    },
+    {
+      "month": "may",
+      "year": "2025",
+      "date": "May 21, 2025",
+      "tldr": "Visual bug on Shopify dev docs page flagged for developer awareness. Non-urgent fix needed. SIR specialists should report dev documentation visual issues to appropriate teams when identified during social monitoring, noting urgency level appropriately.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1748373546638109"
+    },
+    {
+      "month": "may",
+      "year": "2025",
+      "date": "May 16, 2025",
+      "tldr": "Roblox post influx unrelated to Shopify; Custom View created for bulk actioning. SIR specialists should leverage Roblox Custom View to efficiently bulk-action off-topic posts during trending gaming platform discussions.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1747330644332849"
+    },
+    {
+      "month": "may",
+      "year": "2025",
+      "date": "May 15, 2025",
+      "tldr": "New 'summary' feature in Sprout causing issues - unable to respond to merchant, automated rule responding to summary instead. Brand team investigating expected behavior. SIR specialists should note Sprout summary feature limitation and flag technical issues preventing direct merchant responses to Brand Social team.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1747245438748869"
+    },
+    {
+      "month": "may",
+      "year": "2025",
+      "date": "May 14, 2025",
+      "tldr": "Process update: Flag any Partner support sentiment (positive/negative) in #social-escalations regardless of tripwires. Helps frontline gauge Partner feedback since unified support. Figma chart updated. SIR specialists should proactively share Partner support sentiment observations in #social-escalations to bridge gap between social feedback and frontline team awareness.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1747167263876159"
+    },
+    {
+      "month": "may",
+      "year": "2025",
+      "date": "May 13, 2025",
+      "tldr": "Someone sent full ID via Sprout DMs; asked if redaction tool exists. Will send \"Can't Login\" HCA blurb with note not to share ID via social. SIR specialists should educate merchants on PII security when sensitive info shared via DMs and investigate if Sprout offers redaction capabilities for data protection.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1747144857393889"
+    },
+    {
+      "month": "may",
+      "year": "2025",
+      "date": "May 9, 2025",
+      "tldr": "Important process updates for outage/incident posts: Can now respond without status page when RIR requests and tripwires met. Added \"Shopify Internal Voices of Interest\" (execs + Farhan/Mani/Glen). Single Enterprise/VIP post tagging Shopify or these voices triggers reporting. Enhanced reporting/monitoring actions detailed. SIR specialists must review updated Guru Card sections on \"Shopify Internal Voices of Interest\" and \"Incidents/Platform Outages\" for new escalation tripwires and response protocols.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1746825128340049"
+    },
+    {
+      "month": "may",
+      "year": "2025",
+      "date": "May 8, 2025",
+      "tldr": "Detailed walkthrough of using VoCE (Voice of Customer Explorer) with filters to find merchant/ticket from limited Sprout case info. Used store tenure, plan type, sales range, location, language, topics to narrow from thousands to 4 tickets. SIR specialists should leverage VoCE filtering with contextual clues from social posts (location hints, timing, plan mentions) to efficiently identify merchants when direct identifiers unavailable.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1746795620420999"
+    },
+    {
+      "month": "may",
+      "year": "2025",
+      "date": "May 8, 2025",
+      "tldr": "Clarifying stance on Sassy Shortcake reaching out via socials - confirm if still not responding via socials. SIR specialists should verify current response protocols for repeat high-volume merchant social contacts before engaging to ensure consistent handling.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1746722021553649"
+    },
+    {
+      "month": "may",
+      "year": "2025",
+      "date": "May 8, 2025",
+      "tldr": "Process update for reactive outage responses: Can now respond at RIR request regardless of status page existence (previous requirement removed). Guru Card updated under 'Platform Outages'. Kate Baumgardner made excellent decision under ambiguity navigating grey area. SIR specialists should note ability to reactively respond to confirmed outages when requested by RIR even without public status page, trusting judgment on ambiguous situations.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1746632968627969"
+    },
+    {
+      "month": "may",
+      "year": "2025",
+      "date": "May 7, 2025",
+      "tldr": "Incident with 3+ Sprout cases doesn't meet regular L3 tripwires; now resolved but flagged per social-escalations flowchart. Criticism about no status page despite not breaking commerce loop. One case escalated to social-escalations channel. SIR specialists should report incidents with multiple Sprout mentions even when below standard escalation thresholds, noting merchant concerns about transparency gaps.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1746578813276979"
+    },
+    {
+      "month": "may",
+      "year": "2025",
+      "date": "May 2, 2025",
+      "tldr": "New Sprout Asset Library response \"Redirect to HCA/Support - Partners\" published covering both partner support access methods. SIR specialists should use new Partners-specific redirect response when directing partners to support, which covers all partner contact pathways in one template.",
+      "action": "",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1746126851352759"
+    }
+  ]
+}
+
