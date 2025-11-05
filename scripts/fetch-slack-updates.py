@@ -170,6 +170,17 @@ def parse_message_to_entry(message, channel_id, thread_replies=None):
                 action = action_in_thread.group(1).strip()
                 break
     
+    # If thread contradicted the original AND there was a "do not" conclusion, update action
+    if thread_replies and final_resolution:
+        resolution_lower = final_resolution.lower()
+        # Check if resolution is a "don't do this" type of conclusion
+        negative_actions = ['should not', 'do not', 'not recommended', 'security concern', 
+                           'security risk', 'avoid', 'cannot', "can't", 'must not']
+        
+        if any(phrase in resolution_lower for phrase in negative_actions):
+            # Extract what should not be done from resolution
+            action = f"No action required - {final_resolution[:150].strip()}"
+    
     # Get timestamp and convert to date
     msg_timestamp = float(ts)
     msg_date = datetime.fromtimestamp(msg_timestamp)

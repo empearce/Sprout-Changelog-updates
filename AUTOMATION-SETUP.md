@@ -186,12 +186,15 @@ Reply 3: "Kai confirmed we should NOT add information to profiles for security r
 
 The bot will create:
 ```
-TL;DR: Discussion about filling user profiles in Sprout Social for frequent flyers. 
-       UPDATE: Kai confirmed we should NOT add information to Sprout profiles for 
-       security reasons, despite potential efficiency gains.
+TL;DR: Discussion about whether to fill user profiles in Sprout Social for frequent flyers. 
+       After checking with leadership, Kai confirmed this should NOT be done due to 
+       security concerns.
 
-Action: Do NOT populate user profiles in Sprout. This was clarified as a security concern.
+Action: No action required - confirmed we should not add information to Sprout user 
+        profiles for security reasons.
 ```
+
+**Note:** When a thread concludes with "should not", "security concern", or similar negative conclusions, the bot automatically sets the action to "No action required" with the reasoning. This ensures teams don't accidentally take action on something that was decided against.
 
 This ensures the changelog reflects the **accurate final decision**, not just the initial discussion.
 
