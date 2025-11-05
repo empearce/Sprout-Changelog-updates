@@ -162,28 +162,38 @@ The bot will **IGNORE** messages that:
 ### Thread Context Intelligence 🧵
 
 The bot is **smart about threads**! It will:
-- 📖 Read all replies in the thread
-- 🔍 Look for corrections, clarifications, or updates
-- ⚠️ Detect keywords like "actually", "correction:", "incorrect", "checking with", "waiting for"
-- ✏️ Append important thread notes to the TL;DR
+- 📖 Read the ENTIRE thread (all replies)
+- 🔍 Look for corrections, final resolutions, or updates
+- ⚠️ Detect keywords like "actually", "confirmed", "should not", "incorrect", "final answer"
+- ✏️ **Synthesize ONE comprehensive TL;DR** that includes the full conversation
 - 📝 Extract Action items from thread if not in main message
+
+**Important:** The bot reads from newest to oldest to find the **final resolution** first, ensuring the most accurate information.
 
 **Example:**
 If someone posts:
 ```
-TL;DR: SIR specialists should add info to user profiles in Sprout
+TL;DR: Guidance on filling user profiles in Sprout Social for frequent flyers
+Action: Populate user profiles when confident information is accurate
 ```
 
-And someone replies in the thread:
+And the thread conversation evolves:
 ```
-Actually, Kai is checking with leadership about this - not confirmed yet
+Reply 1: "Hmm, is this allowed?"
+Reply 2: "Checking with Kai..."
+Reply 3: "Kai confirmed we should NOT add information to profiles for security reasons"
 ```
 
 The bot will create:
 ```
-TL;DR: SIR specialists should add info to user profiles in Sprout 
-[Note from thread: Actually, Kai is checking with leadership about this - not confirmed yet]
+TL;DR: Discussion about filling user profiles in Sprout Social for frequent flyers. 
+       UPDATE: Kai confirmed we should NOT add information to Sprout profiles for 
+       security reasons, despite potential efficiency gains.
+
+Action: Do NOT populate user profiles in Sprout. This was clarified as a security concern.
 ```
+
+This ensures the changelog reflects the **accurate final decision**, not just the initial discussion.
 
 The bot will automatically:
 - Extract the TL;DR and Action

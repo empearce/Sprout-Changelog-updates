@@ -20,8 +20,8 @@
       "month": "october",
       "year": "2025",
       "date": "October 31, 2025",
-      "tldr": "Guidance on filling user profiles in Sprout Social for frequent flyers - adding partner dashboard links and current email to user profiles can significantly speed up future case handling.",
-      "action": "Populate user profiles when confident information is accurate to improve efficiency for next ATC shift handling same merchant.",
+      "tldr": "Discussion about filling user profiles in Sprout Social for frequent flyers. UPDATE: Kai confirmed we should NOT add information to Sprout profiles for security reasons, despite potential efficiency gains.",
+      "action": "Do NOT populate user profiles in Sprout. This was clarified as a security concern.",
       "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1761919711987769"
     },
     {

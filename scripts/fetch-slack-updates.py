@@ -107,23 +107,55 @@ def parse_message_to_entry(message, channel_id, thread_replies=None):
     
     # Extract TL;DR from main message
     tldr_match = re.search(r'(?:TL;DR:|TLDR:)\s*(.+?)(?:\n|$)', text, re.IGNORECASE | re.DOTALL)
-    tldr = tldr_match.group(1).strip() if tldr_match else text[:200]
+    initial_tldr = tldr_match.group(1).strip() if tldr_match else text[:200]
     
-    # Check thread for corrections or important updates
+    # Synthesize complete TL;DR from entire thread conversation
+    tldr = initial_tldr
+    
     if thread_replies:
-        # Look for corrections, clarifications, or updates in thread
-        correction_keywords = ['actually', 'correction:', 'update:', 'clarification:', 
-                               'incorrect', 'should note', 'checking with', 'waiting for',
-                               'not quite', 'to clarify']
+        # Collect all thread content for comprehensive summary
+        thread_summary = []
         
-        for reply in thread_replies:
-            reply_text = reply.get('text', '').lower()
-            if any(keyword in reply_text for keyword in correction_keywords):
-                # Append important thread context to TL;DR
-                thread_note = reply.get('text', '')[:200]  # First 200 chars of correction
-                tldr += f" [Note from thread: {thread_note}]"
-                print(f"   ⚠️  Added thread context with correction/clarification")
+        # Keywords that indicate important updates/corrections
+        important_keywords = ['actually', 'correction:', 'update:', 'clarification:', 
+                             'incorrect', 'should note', 'checking with', 'confirmed',
+                             'not quite', 'to clarify', 'should not', 'do not',
+                             'instead', 'turns out', 'final answer', 'resolution:']
+        
+        # Look for final resolution or correction
+        final_resolution = None
+        for reply in reversed(thread_replies):  # Start from most recent
+            reply_text = reply.get('text', '')
+            reply_lower = reply_text.lower()
+            
+            # Check if this is a definitive statement or correction
+            if any(keyword in reply_lower for keyword in important_keywords):
+                # This looks like an important update
+                final_resolution = reply_text
+                print(f"   🔄 Found important thread update/correction")
                 break
+        
+        # If we found a resolution/correction, synthesize a complete TL;DR
+        if final_resolution:
+            # Create comprehensive TL;DR that includes both initial and final state
+            # Remove excessive detail but keep key information
+            resolution_summary = final_resolution[:300].strip()
+            
+            # Check if resolution contradicts or updates the initial TL;DR
+            contradicts = any(word in final_resolution.lower() for word in 
+                            ['should not', 'do not', 'incorrect', 'actually', 'instead', 
+                             'not recommended', 'avoid'])
+            
+            if contradicts:
+                # The thread corrects the original - make this clear
+                tldr = f"{initial_tldr.split('.')[0]}. UPDATE: {resolution_summary}"
+            else:
+                # The thread adds context or clarification
+                tldr = f"{initial_tldr} Additional context: {resolution_summary}"
+        else:
+            # No major corrections, but still note there's thread discussion
+            reply_count = len(thread_replies)
+            tldr = f"{initial_tldr} (See thread with {reply_count} replies for full context)"
     
     # Extract Action (if present) - check both main message and thread
     action_match = re.search(r'(?:Action:|ACTION:)\s*(.+?)(?:\n|$)', text, re.IGNORECASE | re.DOTALL)
