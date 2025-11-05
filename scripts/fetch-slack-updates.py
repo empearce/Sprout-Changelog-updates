@@ -35,14 +35,35 @@ def get_slack_messages():
         
         messages = response['messages']
         print(f"✅ Found {len(messages)} messages in the last {LOOKBACK_HOURS} hours")
-        return messages
+        return messages, client
         
     except SlackApiError as e:
         print(f"❌ Error fetching messages: {e.response['error']}")
+        return [], None
+
+def get_thread_context(client, channel_id, thread_ts):
+    """Fetch thread replies to get additional context"""
+    try:
+        response = client.conversations_replies(
+            channel=channel_id,
+            ts=thread_ts,
+            limit=50
+        )
+        
+        # Exclude the parent message (first message)
+        replies = response['messages'][1:] if len(response['messages']) > 1 else []
+        
+        if replies:
+            print(f"   📎 Found {len(replies)} thread replies")
+        
+        return replies
+        
+    except SlackApiError as e:
+        print(f"   ⚠️  Could not fetch thread: {e.response['error']}")
         return []
 
-def parse_message_to_entry(message, channel_id):
-    """Parse a Slack message into a changelog entry"""
+def parse_message_to_entry(message, channel_id, thread_replies=None):
+    """Parse a Slack message into a changelog entry, including thread context"""
     text = message.get('text', '')
     ts = message.get('ts', '')
     
@@ -51,13 +72,19 @@ def parse_message_to_entry(message, channel_id):
     if 'TL;DR:' not in text and 'TLDR:' not in text:
         return None
     
-    # FILTER 1: Must contain "Sprout" (case-insensitive)
-    if 'sprout' not in text.lower():
+    # Combine main message with thread context for better filtering and parsing
+    full_context = text
+    if thread_replies:
+        thread_text = '\n'.join([reply.get('text', '') for reply in thread_replies])
+        full_context = f"{text}\n\nThread context:\n{thread_text}"
+    
+    # FILTER 1: Must contain "Sprout" (case-insensitive) - check full context
+    if 'sprout' not in full_context.lower():
         print(f"⏭️  Skipping: No 'Sprout' mention")
         return None
     
     # FILTER 2: Ignore messages containing "spam" (case-insensitive)
-    if 'spam' in text.lower():
+    if 'spam' in full_context.lower():
         print(f"⏭️  Skipping: Contains 'spam'")
         return None
     
@@ -73,18 +100,43 @@ def parse_message_to_entry(message, channel_id):
         'question:',
         'asking for help'
     ]
-    text_lower = text.lower()
-    if any(pattern in text_lower for pattern in help_patterns):
+    context_lower = full_context.lower()
+    if any(pattern in context_lower for pattern in help_patterns):
         print(f"⏭️  Skipping: Help request detected")
         return None
     
-    # Extract TL;DR
+    # Extract TL;DR from main message
     tldr_match = re.search(r'(?:TL;DR:|TLDR:)\s*(.+?)(?:\n|$)', text, re.IGNORECASE | re.DOTALL)
     tldr = tldr_match.group(1).strip() if tldr_match else text[:200]
     
-    # Extract Action (if present)
+    # Check thread for corrections or important updates
+    if thread_replies:
+        # Look for corrections, clarifications, or updates in thread
+        correction_keywords = ['actually', 'correction:', 'update:', 'clarification:', 
+                               'incorrect', 'should note', 'checking with', 'waiting for',
+                               'not quite', 'to clarify']
+        
+        for reply in thread_replies:
+            reply_text = reply.get('text', '').lower()
+            if any(keyword in reply_text for keyword in correction_keywords):
+                # Append important thread context to TL;DR
+                thread_note = reply.get('text', '')[:200]  # First 200 chars of correction
+                tldr += f" [Note from thread: {thread_note}]"
+                print(f"   ⚠️  Added thread context with correction/clarification")
+                break
+    
+    # Extract Action (if present) - check both main message and thread
     action_match = re.search(r'(?:Action:|ACTION:)\s*(.+?)(?:\n|$)', text, re.IGNORECASE | re.DOTALL)
     action = action_match.group(1).strip() if action_match else ""
+    
+    # Also check thread for action items
+    if not action and thread_replies:
+        for reply in thread_replies:
+            action_in_thread = re.search(r'(?:Action:|ACTION:)\s*(.+?)(?:\n|$)', 
+                                        reply.get('text', ''), re.IGNORECASE | re.DOTALL)
+            if action_in_thread:
+                action = action_in_thread.group(1).strip()
+                break
     
     # Get timestamp and convert to date
     msg_timestamp = float(ts)
@@ -138,9 +190,9 @@ def main():
         return
     
     # Fetch messages
-    messages = get_slack_messages()
+    messages, client = get_slack_messages()
     
-    if not messages:
+    if not messages or not client:
         print("ℹ️  No new messages found")
         return
     
@@ -151,7 +203,16 @@ def main():
     # Process messages
     new_entries = []
     for message in messages:
-        entry = parse_message_to_entry(message, SLACK_CHANNEL_ID)
+        # Check if message has thread replies
+        thread_replies = None
+        reply_count = message.get('reply_count', 0)
+        
+        if reply_count > 0:
+            print(f"🧵 Message has {reply_count} replies, fetching thread context...")
+            thread_replies = get_thread_context(client, SLACK_CHANNEL_ID, message.get('ts'))
+        
+        # Parse message with thread context
+        entry = parse_message_to_entry(message, SLACK_CHANNEL_ID, thread_replies)
         
         if entry and not entry_exists(existing_entries, entry['slackUrl']):
             new_entries.append(entry)

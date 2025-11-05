@@ -50,9 +50,10 @@ git push -u origin main
 #### Configure Bot Permissions:
 
 1. Go to **"OAuth & Permissions"** in the sidebar
-2. Under **"Scopes"** → **"Bot Token Scopes"**, add:
+2. Under **"Scopes"** → **"Bot Token Scopes"**, add these three:
    - `channels:history` - Read messages from public channels
    - `channels:read` - View basic channel info
+   - `channels:replies` - Read thread replies (needed for thread context)
 
 3. Scroll up and click **"Install to Workspace"**
 4. Authorize the app
@@ -158,9 +159,36 @@ The bot will **IGNORE** messages that:
 - ❌ Contain the word "spam"
 - ❌ Appear to be help requests (phrases like "help with", "how do I", "need help", etc.)
 
+### Thread Context Intelligence 🧵
+
+The bot is **smart about threads**! It will:
+- 📖 Read all replies in the thread
+- 🔍 Look for corrections, clarifications, or updates
+- ⚠️ Detect keywords like "actually", "correction:", "incorrect", "checking with", "waiting for"
+- ✏️ Append important thread notes to the TL;DR
+- 📝 Extract Action items from thread if not in main message
+
+**Example:**
+If someone posts:
+```
+TL;DR: SIR specialists should add info to user profiles in Sprout
+```
+
+And someone replies in the thread:
+```
+Actually, Kai is checking with leadership about this - not confirmed yet
+```
+
+The bot will create:
+```
+TL;DR: SIR specialists should add info to user profiles in Sprout 
+[Note from thread: Actually, Kai is checking with leadership about this - not confirmed yet]
+```
+
 The bot will automatically:
 - Extract the TL;DR and Action
 - Get the date from the message timestamp
+- Include important thread context
 - Create the Slack link
 - Add to your changelog
 

@@ -14,7 +14,7 @@ git push -u origin main
 ### ☐ 2. Create Slack App
 1. Go to [api.slack.com/apps](https://api.slack.com/apps)
 2. Create new app → "Changelog Bot"
-3. Add scopes: `channels:history`, `channels:read`
+3. Add scopes: `channels:history`, `channels:read`, `channels:replies`
 4. Install to workspace
 5. Copy Bot OAuth Token (xoxb-...)
 6. Invite bot to channel: `/invite @Changelog Bot`
