@@ -3,6 +3,14 @@
     {
       "month": "november",
       "year": "2025",
+      "date": "November 6, 2025",
+      "tldr": "Sassy Shortcake reaching out via socials again. Merchant receiving correct support through regular channels but frustrated with 3rd party services (Google, Pinterest) handling of integration issues. Team instructed not to respond to social posts as it encourages more of same behavior.",
+      "action": "Do not respond to Sassy Shortcake on social channels. Ping Veronica if messages are received, but let normal support processes handle unless regular support breaks down.",
+      "slackUrl": "https://shopify.slack.com/archives/C05J9RTC9K6/p1762445583035549"
+    },
+    {
+      "month": "november",
+      "year": "2025",
       "date": "November 3, 2025",
       "tldr": "Fraud Ops now holding high-risk payouts up to full year - discovered via Trust Platform ticket linked from Sprout case. Merchant RELIGIONLESS terminated for suspected illegitimate commerce activity violating ToS, account closed with pending payouts held.",
       "action": "Be aware of extended payout hold policy for high-risk merchants and prepare for increased merchant complaints about year-long holds in Sprout.",

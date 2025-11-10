@@ -372,7 +372,8 @@
         // Load changelog data from JSON
         async function loadChangelogData() {
             try {
-                const response = await fetch('changelog-data.json');
+                // Add cache-busting parameter to force fresh data
+                const response = await fetch(`changelog-data.json?v=${Date.now()}`);
                 changelogData = await response.json();
                 renderChangelog();
                 updatePage();
